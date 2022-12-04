@@ -1,0 +1,97 @@
+<div class="flex flex-col w-full">
+    <div class="flex w-full items-center px-5 bg-gray-200 shadow" style="height: 80px">
+        <mat-icon svgIcon="apartment"></mat-icon>
+        <h1 class="font-bold text-2xl px-3 text-accent">
+            تتبع القوافل</h1>
+    </div>
+
+    <!--    -->
+
+    <div>
+        <div class="map flex items-center justify-center bg-gray-300 m-3" style="height: 300px">
+            map
+        </div>
+        <div class="my-3 mx-3">
+            <header class="flex justify-between items-center">
+                <h2 class="font-bold text-xl mx-2 text-secondary">قائمة القوافل</h2>
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="تصفية">
+                    <!--                        <mat-icon matSuffix >sentiment_very_satisfied</mat-icon>-->
+                    <mat-icon matSuffix [matMenuTriggerFor]="menu" svgIcon="filter_alt"></mat-icon>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <span>الوجهة</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>الوقت</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>الحالة</span>
+                        </button>
+                    </mat-menu>
+                </mat-form-field>
+            </header>
+
+            <div class="my-2">
+                <div class="flex items-center my-2">
+                    <h3 class="text-secondary text-sm mx-2"> الأثنين 6 ذي الحجة</h3>
+                    <div class="border-b  flex-grow" style="height: 1px"></div>
+                </div>
+                <div *ngFor="let dd of [1,2,3]"
+                     class="bg-white w-full my-1 px-2 py-2 rounded flex justify-between">
+                    <div class="mr-2">
+                        <label class="text-cyan-500 text-xs">الوجهة</label>
+                        <div class="font-bold ">الحرم</div>
+                    </div>
+
+                    <div class="">
+                        <label class="text-cyan-500 text-xs">وقت الانطلاق</label>
+                        <div class="font-bold ">6:00 م</div>
+                    </div>
+
+                    <div class="">
+                        <label class="text-cyan-500 text-xs">الحالة</label>
+                        <div class="font-bold ">لم يبدأ</div>
+                    </div>
+                    <div class=" flex items-center">
+                        <mat-icon svgIcon="chevron_left"></mat-icon>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center my-2">
+                    <h3 class="text-secondary text-sm mx-2"> الثلاثاء 7 ذي الحجة</h3>
+                    <div class="border-b  flex-grow" style="height: 1px"></div>
+                </div>
+                <div *ngFor="let dd of [1,2,3]"
+                     class="bg-white w-full my-1 px-2 py-2 rounded flex justify-between">
+                    <div class=" flex items-center " >
+                        <mat-icon svgIcon="flag"></mat-icon>
+                    </div>
+                    <div class="mr-2">
+                        <label class="text-cyan-500 text-xs">الوجهة</label>
+                        <div class="font-bold ">الحرم</div>
+                    </div>
+
+                    <div class="">
+                        <label class="text-cyan-500 text-xs">وقت الانطلاق</label>
+                        <div class="font-bold ">6:00 م</div>
+                    </div>
+
+                    <div class="">
+                        <label class="text-cyan-500 text-xs">الحالة</label>
+                        <div class="font-bold flex items-center">
+                            <mat-icon svgIcon="radio_button_checked" class="icon-size-4 ml-2" ></mat-icon>
+
+                            لم يبدأ</div>
+                    </div>
+                    <div class=" flex items-center">
+                        <mat-icon svgIcon="chevron_left"></mat-icon>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
