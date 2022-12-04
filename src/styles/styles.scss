@@ -2,3 +2,21 @@
 /*  @ Import/write your custom styles here.
 /*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
 /* ----------------------------------------------------------------------------------------------------- */
+
+
+fuse-vertical-navigation {
+    mat-icon.fuse-vertical-navigation-item-icon{
+        margin-right: 0px;
+        margin-left: 16px;
+    }
+}
+
+mat-form-field{
+
+    .mat-mdc-form-field-icon-suffix{
+        mat-icon{
+            margin-left: unset !important;
+            margin-right: 12px;
+        }
+    }
+}
