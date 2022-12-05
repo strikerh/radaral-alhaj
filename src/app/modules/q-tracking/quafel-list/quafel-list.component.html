@@ -37,8 +37,8 @@
                     <h3 class="text-secondary text-sm mx-2"> الأثنين 6 ذي الحجة</h3>
                     <div class="border-b  flex-grow" style="height: 1px"></div>
                 </div>
-                <div *ngFor="let dd of [1,2,3]"
-                     class="bg-white w-full my-1 px-2 py-2 rounded flex justify-between">
+                <div *ngFor="let dd of [1,2,3]" matRipple  [routerLink]="['/quafel', 'kjasd']"
+                     class="bg-white w-full my-1 px-2 py-2 rounded flex justify-between cursor-pointer">
                     <div class="mr-2">
                         <label class="text-cyan-500 text-xs">الوجهة</label>
                         <div class="font-bold ">الحرم</div>
@@ -63,8 +63,8 @@
                     <h3 class="text-secondary text-sm mx-2"> الثلاثاء 7 ذي الحجة</h3>
                     <div class="border-b  flex-grow" style="height: 1px"></div>
                 </div>
-                <div *ngFor="let dd of [1,2,3]"
-                     class="bg-white w-full my-1 px-2 py-2 rounded flex justify-between">
+                <div *ngFor="let dd of [1,2,3]" matRipple  [routerLink]="['/quafel', 'kjasd']"
+                     class="bg-white w-full my-1 px-2 py-2 rounded flex justify-between cursor-pointer">
                     <div class=" flex items-center " >
                         <mat-icon svgIcon="flag"></mat-icon>
                     </div>

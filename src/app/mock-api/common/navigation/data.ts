@@ -10,39 +10,32 @@ export const defaultNavigation: FuseNavigationItem[] = [
         children: [
             {
                 id   : 'dashboards.project',
-                title: 'تتبع القافلة',
+                title: 'تتبع القوافل',
                 type : 'basic',
                 icon : 'heroicons_outline:clipboard-check',
-                link : '/dashboards/project'
-            },
-            {
-                id   : 'dashboards.analytics',
-                title: 'تفاصيل الحملة',
-                type : 'basic',
-                icon : 'heroicons_outline:chart-pie',
-                link : '/dashboards/analytics'
+                link : '/quafel'
             },
             {
                 id   : 'dashboards.finance',
                 title: 'المعلومات الشخصية',
                 type : 'basic',
                 icon : 'heroicons_outline:cash',
-                link : '/dashboards/finance'
+                link : '/profile'
             },
             {
                 id   : 'dashboards.crypto',
                 title: 'معلومات عن الحملة',
                 type : 'basic',
                 icon : 'heroicons_outline:currency-dollar',
-                link : '/dashboards/crypto'
+                link : '/about-hamla'
             },
 
             {
                 id   : 'dashboards.cryptoa',
-                title: 'للطوائ',
+                title: 'تواصل للطوائ',
                 type : 'basic',
                 icon : 'heroicons_outline:currency-dollar',
-                link : '/dashboards/crypto'
+                link : '/sos'
             }
         ]
     },
@@ -57,14 +50,14 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 title: 'من نحن؟',
                 type : 'basic',
                 icon : 'heroicons_outline:academic-cap',
-                link : '/apps/academy'
+                link : '/about-us'
             },
             {
                 id   : 'apps.chat',
                 title: 'الشروط والأحكام',
                 type : 'basic',
                 icon : 'heroicons_outline:chat-alt',
-                link : '/apps/chat'
+                link : '/policy'
             },
 
         ]
