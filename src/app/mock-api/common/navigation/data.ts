@@ -35,7 +35,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 title: 'تواصل للطوائ',
                 type : 'basic',
                 icon : 'heroicons_outline:currency-dollar',
-                link : '/sos'
+                function: item => {     (window as any).fcWidget.open();}
             }
         ]
     },

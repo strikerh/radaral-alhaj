@@ -41,6 +41,11 @@
                 <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden text-center leading-normal font-medium">
                     مرحبا فلان الفلاني
                 </div>
+                <a class="text-sm"
+                    (click)="signOut()">
+                    <span>تسجيل خروج</span>
+                </a>
+<!--                <user [showAvatar]="false"></user>-->
         <!--        <div class="w-full mt-0.5 whitespace-nowrap text-ellipsis overflow-hidden text-center text-md leading-normal font-medium text-secondary">
                     {{user.email}}
                 </div>-->
@@ -70,7 +75,7 @@
         </button>
         <!-- Components -->
         <div class="flex items-center pl-2 ">
-                <img src="assets/images/logo/logo2.png" class=" w-auto" style="height: 40px" alt="logo">
+            <a routerLink="/"> <img src="assets/images/logo/logo2.png" class=" w-auto" style="height: 40px" alt="logo"></a>
 <!--            <languages></languages>-->
 <!--            <fuse-fullscreen class="hidden md:block"></fuse-fullscreen>-->
 <!--            <search [appearance]="'bar'"></search>-->

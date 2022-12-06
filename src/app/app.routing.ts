@@ -108,6 +108,10 @@ export const appRoutes: Route[] = [
                 path: 'profile',
                 loadChildren: () => import('app/modules/profile/profile.module').then(m => m.ProfileModule)
             },
+            {
+                path: '',
+                loadChildren: () => import('app/modules/pages/pages.module').then(m => m.PagesModule)
+            },
 
 
 
