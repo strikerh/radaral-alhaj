@@ -18,14 +18,12 @@ export class PublicProfileComponent {
     };
 
     hamlaInfo: any = {
-        name: 'حاملة الراجحي',
+        name: 'حملة الراجحي',
         mobile: '0532754598',
-        homeAddress: 'فندق كذا, طريق فلاني, بحي كذة ',
+        homeAddress: 'فندق السلام، ابراهيم الخليل، الحرم، مكة المكرمة',
         target: 'الحرم المكي',
-        tripLeaderName: 'فلان الفلاني',
+        tripLeaderName: 'خالد عبدالله',
         tripLeaderMobile: '0504578965',
-
-
     };
 
 }
