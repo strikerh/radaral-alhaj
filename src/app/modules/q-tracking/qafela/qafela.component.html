@@ -12,8 +12,8 @@
     <!--    -->
 
     <div>
-        <div class="map flex items-center justify-center bg-gray-300 m-3" style="height: 300px">
-            map
+        <div class="map flex items-center justify-center bg-gray-300 m-3" #mapCont>
+            <google-map  [width]="mapCont.clientWidth" height="300" [options]="mapOptions" ></google-map>
         </div>
         <div class="my-3 mx-3">
             <header class="flex justify-between items-center">

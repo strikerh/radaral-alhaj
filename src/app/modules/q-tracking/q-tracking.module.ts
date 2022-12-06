@@ -9,6 +9,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatListModule} from "@angular/material/list";
 import { QafelaComponent } from './qafela/qafela.component';
 import {MatRippleModule} from "@angular/material/core";
+import {GoogleMapsModule} from "@angular/google-maps";
 
 const routes: Routes = [
     {
@@ -35,7 +36,8 @@ const routes: Routes = [
         MatMenuModule,
         MatButtonModule,
         MatListModule,
-        MatRippleModule
+        MatRippleModule,
+        GoogleMapsModule,
     ]
 })
 export class QTrackingModule { }

@@ -8,8 +8,8 @@
     <!--    -->
 
     <div>
-        <div class="map flex items-center justify-center bg-gray-300 m-3" style="height: 300px">
-            map
+        <div class="map flex items-center justify-center bg-gray-300 m-3" #mapCont>
+            <google-map  [width]="mapCont.clientWidth" height="300" [options]="mapOptions" ></google-map>
         </div>
         <div class="my-3 mx-3">
             <header class="flex justify-between items-center">
@@ -39,6 +39,9 @@
                 </div>
                 <div *ngFor="let dd of [1,2,3]" matRipple  [routerLink]="['/quafel', 'kjasd']"
                      class="bg-white w-full my-1 px-2 py-2 rounded flex justify-between cursor-pointer">
+                    <div class=" flex items-center " >
+                        <mat-icon svgIcon="flag"></mat-icon>
+                    </div>
                     <div class="mr-2">
                         <label class="text-cyan-500 text-xs">الوجهة</label>
                         <div class="font-bold ">الحرم</div>
@@ -51,13 +54,15 @@
 
                     <div class="">
                         <label class="text-cyan-500 text-xs">الحالة</label>
-                        <div class="font-bold ">لم يبدأ</div>
+                        <div class="font-bold flex items-center">
+                            <mat-icon svgIcon="radio_button_checked" class="icon-size-4 ml-2" ></mat-icon>
+
+                            لم يبدأ</div>
                     </div>
                     <div class=" flex items-center">
                         <mat-icon svgIcon="chevron_left"></mat-icon>
                     </div>
                 </div>
-
 
                 <div class="flex items-center my-2">
                     <h3 class="text-secondary text-sm mx-2"> الثلاثاء 7 ذي الحجة</h3>

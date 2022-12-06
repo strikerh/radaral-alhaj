@@ -20,4 +20,11 @@ export class QafelaComponent {
         joiners: ['asd','asd','asd','asd','asd',],
 
     }
+    mapOptions:  google.maps.MapOptions = {
+        center: {lat: 21.4367611, lng: 39.7836277},
+        zoom: 12,
+        fullscreenControl: false,
+        mapTypeControl: false,
+        streetViewControl: false
+    };
 }
